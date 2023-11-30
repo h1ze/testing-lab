@@ -1,0 +1,32 @@
+.nav {
+  padding: 26px 16px;
+  background-color: rgba(42, 109, 234, 0.8);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1213px;
+    margin: 0 auto;
+  }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
