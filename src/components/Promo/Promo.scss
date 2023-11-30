@@ -35,3 +35,20 @@
     color: #191c1f;
   }
 }
+
+@media screen and (max-width: 984px) {
+  .promo {
+    padding: 317px 0 398px;
+
+    &__title {
+      max-width: 476px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}

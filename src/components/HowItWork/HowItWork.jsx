@@ -36,8 +36,10 @@ const HowItWork = () => {
           return (
             <li className="work__item" key={el.heading}>
               <img className="work__img" src={el.img} />
-              <h3 className="work__heading">{el.heading}</h3>
-              <p className="work__text">{el.text}</p>
+              <div className="work__text">
+                <h3 className="work__heading">{el.heading}</h3>
+                <p className="work__paragraph">{el.text}</p>
+              </div>
             </li>
           );
         })}

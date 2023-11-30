@@ -1,8 +1,7 @@
 .work {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 80px 24px 80px;
-  max-width: 1216px;
+  padding: 80px 20px 80px;
   font-family: 'Montserrat', 'Arial', sans-serif;
 
   &__title {
@@ -14,10 +13,14 @@
   }
 
   &__list {
-    margin: 0;
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
     gap: 32px;
+    justify-content: space-evenly;
     list-style: none;
   }
 
@@ -33,9 +36,28 @@
     line-height: 24px;
   }
 
-  &__text {
+  &__paragraph {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .work {
+    padding: 56px 20px 71px;
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, 340px);
+    }
+
+    &__item {
+      display: flex;
+      gap: 16px;
+    }
+
+    &__img {
+      margin: 0;
+    }
   }
 }
