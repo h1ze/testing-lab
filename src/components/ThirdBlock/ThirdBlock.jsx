@@ -2,7 +2,7 @@ import './ThirdBlock.scss';
 
 const ThirdBlock = () => {
   return (
-    <section className="third-block">
+    <section className="third-block" id="third-block">
       <div className="third-block__description">
         <h2 className="third-block__title">
           Круто, ты дошел до третьего блока

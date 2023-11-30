@@ -2,10 +2,10 @@ import Nav from '../Nav/Nav';
 import Promo from '../Promo/Promo';
 import './Header.scss';
 
-const Header = () => {
+const Header = ({ onOpenMenu }) => {
   return (
     <header className="header">
-      <Nav />
+      <Nav onOpenMenu={onOpenMenu} />
       <Promo />
     </header>
   );

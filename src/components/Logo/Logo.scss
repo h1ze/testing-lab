@@ -1,7 +1,11 @@
 .logo-link {
   text-decoration: none;
-  
+
   &__image {
     display: block;
+
+    &_menu {
+      margin: 0 0 28px;
+    }
   }
 }

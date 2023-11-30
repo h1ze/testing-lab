@@ -29,7 +29,7 @@ const HowItWork = () => {
   ];
 
   return (
-    <section className="work">
+    <section className="work" id="work">
       <h2 className="work__title">Как это работает</h2>
       <ul className="work__list">
         {data.map((el) => {

@@ -29,7 +29,7 @@ const Comments = () => {
   ];
 
   return (
-    <section className="comments">
+    <section className="comments" id="comments">
       <h2 className="comments__title">Отзывы</h2>
       <div className="comments__wrapper">
         <button

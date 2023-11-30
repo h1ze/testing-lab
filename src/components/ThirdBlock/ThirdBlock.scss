@@ -1,4 +1,6 @@
 .third-block {
+  box-sizing: border-box;
+  padding: 0 21px 80px;
   display: flex;
   gap: 32px;
   justify-content: center;
@@ -27,7 +29,7 @@
   }
 
   &__picture {
-    background: url('../../assets/images/Group.jpg') no-repeat center/cover;
+    background: url('../../assets/images/Group.jpg') no-repeat center/contain;
     flex-basis: 592px;
     height: 448px;
   }
