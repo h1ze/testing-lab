@@ -22,6 +22,7 @@
     margin: 0;
     font-size: 16px;
     line-height: 28px;
+    color: #5e646a;
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -59,6 +60,7 @@
 @media screen and (max-width: 700px) {
   .third-block {
     flex-direction: column;
+    gap: 7px;
 
     &__description {
       order: 2;
@@ -72,6 +74,16 @@
     &__picture {
       order: 1;
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .third-block {
+    gap: 27px;
+
+    &__title {
+      margin-bottom: 27px;
     }
   }
 }

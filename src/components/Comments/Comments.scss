@@ -104,6 +104,10 @@
   .comments {
     margin-bottom: 40px;
 
+    &__btn {
+      display: none;
+    }
+
     &__cards {
       gap: 24px;
       grid-template-columns: repeat(auto-fit, 350px);
@@ -111,15 +115,25 @@
   }
 }
 
-
 @media screen and (max-width: 568px) {
   .comments {
-    padding: 27px 16px 37px;
+    padding: 27px 0px 37px;
     margin-bottom: 43px;
 
     &__cards {
       gap: 24px;
       grid-template-columns: repeat(auto-fit, 350px);
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .comments {
+    padding: 27px 0px 37px;
+    margin-bottom: 43px;
+
+    &__cards {
+      grid-template-columns: repeat(auto-fit, 288px);
     }
   }
 }
