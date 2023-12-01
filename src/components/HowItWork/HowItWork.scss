@@ -61,3 +61,28 @@
     }
   }
 }
+
+@media screen and (max-width: 568px) {
+  .work {
+    padding: 56px 17px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 26px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, 340px);
+    }
+
+    &__item {
+      display: flex;
+      gap: 16px;
+    }
+
+    &__img {
+      margin: 0;
+    }
+  }
+}

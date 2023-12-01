@@ -55,3 +55,23 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .third-block {
+    flex-direction: column;
+
+    &__description {
+      order: 2;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 0px;
+    }
+
+    &__picture {
+      order: 1;
+      width: 100%;
+    }
+  }
+}
